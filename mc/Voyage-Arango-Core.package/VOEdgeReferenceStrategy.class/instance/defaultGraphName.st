@@ -1,0 +1,3 @@
+accessing
+defaultGraphName
+	^ 'voyage'

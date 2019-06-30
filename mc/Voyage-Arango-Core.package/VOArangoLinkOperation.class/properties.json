@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "VOOperation",
+	"category" : "Voyage-Arango-Core-Operations",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"from",
+		"to",
+		"properties",
+		"graphName",
+		"description"
+	],
+	"name" : "VOArangoLinkOperation",
+	"type" : "normal"
+}

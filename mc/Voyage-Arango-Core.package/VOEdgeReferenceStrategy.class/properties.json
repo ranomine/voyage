@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "VOReferenceStrategy",
+	"category" : "Voyage-Arango-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"graphName"
+	],
+	"name" : "VOEdgeReferenceStrategy",
+	"type" : "normal"
+}

@@ -1,7 +1,9 @@
 private
 ensurePersisted: anObject
 
+	| c |
 	(operations hasOperationFor: anObject) ifFalse:[
-		self serialize: anObject ].	
+		c := self serialize: anObject ].	
+	^ operations atObject: anObject
 	"It might be first nil, but added in serialize call... should we optimise this? it is worthy?"
-	^ self rawFuture: (operations atObject: anObject)
+"	^ self rawFuture: (operations atObject: anObject)"
