@@ -1,0 +1,1 @@
+I'm a special voyage nil value that indicates the absence of a value where nil is allowed 

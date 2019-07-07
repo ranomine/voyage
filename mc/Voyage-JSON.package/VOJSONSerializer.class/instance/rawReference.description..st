@@ -8,9 +8,7 @@ rawReference: anObject description: aDescription
 			self ensurePersisted: anObject.
 			(operations atObject: anObject) object ]
 		ifFalse: [ anObject ].
-	
 	ref :=  repository referenceFrom: object to: target description: aDescription.
-	ref repository: repository.
 	operations add: ref.
 	^ nil
 	"jsonDictionary := self referenceToDictionary: anObject.
