@@ -3,5 +3,5 @@ edgeCollectionName
 	^ String streamContents: [ :stream |
 			stream 
 				nextPutAll: (repository collectionNameFor: from class);
-				nextPut: $-;
+				nextPut: $_;
 				nextPutAll: (repository collectionNameFor: to class) ]
