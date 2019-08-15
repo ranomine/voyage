@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "VOReferenceStrategy",
 	"category" : "Voyage-Model-Core-Base",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"repository",
-		"operations"
-	],
-	"name" : "VOReferenceStrategy",
+	"instvars" : [ ],
+	"name" : "VOSymbolicReferenceStrategy",
 	"type" : "normal"
 }

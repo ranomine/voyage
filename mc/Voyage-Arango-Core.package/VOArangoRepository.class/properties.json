@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"uri",
-		"referenceStrategy",
 		"client"
 	],
 	"name" : "VOArangoRepository",
