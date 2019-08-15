@@ -1,4 +1,5 @@
 accessing
 client
-	^ ArangoDBClient new
-		baseUri: uri
+	^ client ifNil: [
+		client := ArangoDBClient new
+		baseUri: uri ]
