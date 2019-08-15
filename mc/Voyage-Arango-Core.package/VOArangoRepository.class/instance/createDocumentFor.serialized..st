@@ -1,18 +1,15 @@
 as yet unclassified
 createDocumentFor: anObject serialized: serialized
-	| response document collectionName id |
+	| handle collectionName |
 
 	collectionName := self collectionNameFor: anObject class.
 
-	response := self client
+	handle := self client
 		createDocument: serialized 
 		collection: collectionName 
 		createMissing: true.
-		
-	document := NeoJSONReader fromString: response contents.
-	id := document at: self fieldRootId.
 	
-	self cacheAt: id put: anObject.
-	self cacheAt: id putVersion: (document at: self fieldVersion).
+	self cacheAt: handle key put: anObject.
+	self cacheAt: handle key putVersion: (handle revision).
 	
-	^ document
+	^ handle

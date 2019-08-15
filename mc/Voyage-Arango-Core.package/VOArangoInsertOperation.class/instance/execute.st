@@ -1,9 +1,8 @@
 execution
 execute 
-	| document |
 	serialized 
 		at: repository fieldRootId put: id asString.
 
-	document := repository 
+	handle := repository 
 		createDocumentFor: object
 		serialized: serialized.

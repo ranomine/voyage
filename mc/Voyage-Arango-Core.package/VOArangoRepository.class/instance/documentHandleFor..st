@@ -1,5 +1,5 @@
 accessing
 documentHandleFor: document
 	^ ArangoDocumentHandle new
-		repository: self;
-		document: document 
+		collection: (self collectionNameFor: document class);
+		key: (self keyOf: document)
